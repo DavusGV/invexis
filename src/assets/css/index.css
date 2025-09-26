@@ -1,0 +1,98 @@
+/* Carousel */
+.carousel-container {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slide {
+  width: 100%;
+  height: 100%;
+  animation: moveBanner 12s linear infinite;
+}
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animación de movimiento lento */
+@keyframes moveBanner {
+  0% { transform: scale(1) translateX(0); }
+  50% { transform: scale(1.05) translateX(-2%); }
+  100% { transform: scale(1) translateX(0); }
+}
+
+/* Sección de métricas */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.stat span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+.stat p {
+  margin: 0;
+}
+
+/* Testimonial */
+.testimonial-section {
+  background: url("") center/cover no-repeat;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.testimonial-section .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+.testimonial-section blockquote {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.2rem;
+}
+.testimonial-section cite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.testimonial-section cite img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* Secciones alternadas */
+.alt-section {
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+.alt-section.reverse {
+  flex-direction: row-reverse;
+}
+.alt-section .image-side img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+.alt-section .text-side {
+  flex: 1;
+}
+.alt-section .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
